@@ -34,16 +34,55 @@ a:active {
 	text-decoration: none;
 }
 
+@keyframes logoAnimation {
+    from {
+        width: 200px;
+        transform: rotate(359deg);
+    }
+    to {
+        width: 90%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes picturesAnimation {
+    from {
+        width: 200px;
+        opacity: 0%;
+    }
+    to {
+        width: 400px;
+        opacity: 100%;
+    }
+}
+
+@keyframes continuousAnimation {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(3deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-3deg);}
+    100% {transform: rotate(0deg);}
+}
+
 .mineralMadnessLogo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    max-width: 600;
-    min-width: 200;
+    animation: logoAnimation 2s ease-out;
+    
 }
 
-.pictures {
+.logoContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 700px;
+    animation: continuousAnimation 2s linear 1.99s infinite;
+}
+
+.pictures1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -52,6 +91,34 @@ a:active {
     width: 60%;
     max-width: 400;
     min-width: 200;
+    opacity: 0;
+    animation: picturesAnimation 2s 0.5s forwards;
+}
+
+.pictures2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px #39314b;
+    border-radius: 20px;
+    width: 60%;
+    max-width: 400;
+    min-width: 200;
+    opacity: 0;
+    animation: picturesAnimation 2s 1s forwards;
+}
+
+.pictures3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px #39314b;
+    border-radius: 20px;
+    width: 60%;
+    max-width: 400;
+    min-width: 200;
+    opacity: 0;
+    animation: picturesAnimation 2s 1.5s forwards;
 }
 
 .companyLogo {
