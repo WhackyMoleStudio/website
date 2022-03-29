@@ -47,11 +47,9 @@ a:active {
 
 @keyframes picturesAnimation {
     from {
-        width: 200px;
         opacity: 0%;
     }
     to {
-        width: 400px;
         opacity: 100%;
     }
 }
@@ -89,10 +87,10 @@ a:active {
     box-shadow: 5px 5px 5px #39314b;
     border-radius: 20px;
     width: 60%;
-    max-width: 400;
+    max-width: 500;
     min-width: 200;
     opacity: 0;
-    animation: picturesAnimation 2s 0.5s forwards;
+    animation: picturesAnimation 2s 1s forwards;
 }
 
 .pictures2 {
@@ -102,10 +100,10 @@ a:active {
     box-shadow: 5px 5px 5px #39314b;
     border-radius: 20px;
     width: 60%;
-    max-width: 400;
+    max-width: 500;
     min-width: 200;
     opacity: 0;
-    animation: picturesAnimation 2s 1s forwards;
+    animation: picturesAnimation 2s 1.5s forwards;
 }
 
 .pictures3 {
@@ -115,13 +113,27 @@ a:active {
     box-shadow: 5px 5px 5px #39314b;
     border-radius: 20px;
     width: 60%;
-    max-width: 400;
+    max-width: 500;
     min-width: 200;
     opacity: 0;
-    animation: picturesAnimation 2s 1.5s forwards;
+    animation: picturesAnimation 2s 2s forwards;
 }
 
 .companyLogo {
     width: 80px;
     border-radius: 40px;
+}
+
+.trailer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px #39314b;
+    border-radius: 20px;
+    width: 60%;
+    max-width: 500;
+    min-width: 200;
+    aspect-ratio: 16/9;
+    opacity: 0;
+    animation: picturesAnimation 2s 0.5s forwards;
 }
