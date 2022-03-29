@@ -23,11 +23,12 @@ table, th, td {
 a:link, a:visited {
     color: #ffffff;
 	text-decoration: none;
-    text-shadow: 2px 2px 2px #564064;
+    text-shadow: 2px 2px 2px #795130;
 }
 a:hover {
     color: #8e478c;
 	text-decoration: none;
+    text-shadow: 1px 1px 2px #795130;
 }
 a:active {
     color: #39314b;
@@ -63,12 +64,12 @@ a:active {
 }
 
 .mineralMadnessLogo {
+    all: unset;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     animation: logoAnimation 2s ease-out;
-    
 }
 
 .logoContainer {
@@ -80,50 +81,6 @@ a:active {
     animation: continuousAnimation 2s linear 1.99s infinite;
 }
 
-.pictures1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 5px 5px 5px #39314b;
-    border-radius: 20px;
-    width: 80%;
-    max-width: 500;
-    min-width: 200;
-    opacity: 0;
-    animation: picturesAnimation 2s 1s forwards;
-}
-
-.pictures2 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 5px 5px 5px #39314b;
-    border-radius: 20px;
-    width: 80%;
-    max-width: 500;
-    min-width: 200;
-    opacity: 0;
-    animation: picturesAnimation 2s 1.5s forwards;
-}
-
-.pictures3 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 5px 5px 5px #39314b;
-    border-radius: 20px;
-    width: 80%;
-    max-width: 500;
-    min-width: 200;
-    opacity: 0;
-    animation: picturesAnimation 2s 2s forwards;
-}
-
-.companyLogo {
-    width: 80px;
-    border-radius: 40px;
-}
-
 .trailer {
     display: block;
     margin-left: auto;
@@ -133,7 +90,38 @@ a:active {
     width: 80%;
     max-width: 500;
     min-width: 200;
-    aspect-ratio: 16/9;
     opacity: 0;
+    aspect-ratio: 16/9;
     animation: picturesAnimation 2s 0.5s forwards;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px #39314b;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 500;
+    min-width: 200;
+    opacity: 0;
+}
+
+.pictures1 {
+    animation: picturesAnimation 2s 1s forwards;
+}
+
+.pictures2 {
+    animation: picturesAnimation 2s 1.5s forwards;
+}
+
+.pictures3 {
+    animation: picturesAnimation 2s 2s forwards;
+}
+
+.companyLogo {
+    all: unset;
+    width: 80px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 3px #795130;
 }
