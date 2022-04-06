@@ -43,24 +43,9 @@ a:active {
     font-weight: bold;
 }
 
-@keyframes logoAnimation {
-    from {
-        width: 200px;
-        transform: rotate(540deg);
-    }
-    to {
-        width: 90%;
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes picturesAnimation {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-    }
+@keyframes fadeInAnimation {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
 }
 
 @keyframes continuousAnimation {
@@ -77,7 +62,8 @@ a:active {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    animation: logoAnimation 1.5s ease-out;
+    opacity: 0;
+    animation: fadeInAnimation 2s 0s forwards;
 }
 
 .logoContainer {
@@ -86,7 +72,7 @@ a:active {
     margin-right: auto;
     width: 100%;
     max-width: 700px;
-    animation: continuousAnimation 2s linear 1.49s infinite;
+    animation: continuousAnimation 2s linear 0s infinite;
 }
 
 .trailer {
@@ -99,7 +85,7 @@ a:active {
     max-width: 500;  
     opacity: 0;
     aspect-ratio: 16/9;
-    animation: picturesAnimation 2s 0.5s forwards;
+    animation: fadeInAnimation 2s 0.5s forwards;
 }
 
 img {
@@ -117,18 +103,19 @@ img {
     all:unset;
     width: 200px;
     border-radius: 100px;
+    animation: fadeInAnimation 2s;
 }
 
 .pictures1 {
-    animation: picturesAnimation 2s 1s forwards;
+    animation: fadeInAnimation 2s 1s forwards;
 }
 
 .pictures2 {
-    animation: picturesAnimation 2s 1.5s forwards;
+    animation: fadeInAnimation 2s 1.5s forwards;
 }
 
 .pictures3 {
-    animation: picturesAnimation 2s 2s forwards;
+    animation: fadeInAnimation 2s 2s forwards;
 }
 
 .companyLogo {
@@ -167,6 +154,7 @@ img {
     color: #dddddd;
 	text-decoration: none;
     text-shadow: 2px 2px 2px #39314b;
+    animation: fadeInAnimation 1.5s;
 }
 
 @media only screen and (min-width: 768px) {
