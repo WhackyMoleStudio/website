@@ -1,3 +1,6 @@
+@font-face { font-family: Lucky; src: url('luckiest-guy.regular.ttf'); }
+@font-face { font-family: Sofija; src: url('sofija.regular.ttf'); }
+
 .top {
     background-color: #eea160;
     box-shadow: 0px 10px 10px #39314b;
@@ -8,8 +11,35 @@ body {
     height: 100%;
     margin: 0%;
     display:flex; 
-    flex-direction:column; 
+    flex-direction:column;
 }
+
+.box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eea160;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #39314b;
+    width: 80%;
+    opacity: 0;
+    animation: fadeInAnimation 2s 0.5s forwards;
+    max-width: 1200px;
+}
+
+.text {
+    padding: 20px;
+    max-width: 42%;
+    animation: fadeInAnimation 2s 0.5s forwards;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: x-large;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #795130;
+}
+
+h2 {margin-top: 10px;}
+
+h3 {margin-top: 10px;}
 
 footer {
     background-color: #eea160;
@@ -20,7 +50,8 @@ footer {
 table, th, td {
     /*border: 1px solid black;*/
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lucky, sans-serif;
+    font-size: large;
     padding-top: 8px;
     padding-bottom: 8px;
 }
@@ -29,18 +60,15 @@ a:link, a:visited {
     color: #ffffff;
 	text-decoration: none;
     text-shadow: 2px 2px 2px #795130;
-    font-weight: bold;
 }
 a:hover {
     color: #8e478c;
 	text-decoration: none;
     text-shadow: 1px 1px 2px #795130;
-    font-weight: bold;
 }
 a:active {
     color: #39314b;
 	text-decoration: none;
-    font-weight: bold;
 }
 
 @keyframes fadeInAnimation {
@@ -76,27 +104,22 @@ a:active {
 }
 
 .trailer {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 5px 5px 5px #39314b;
+    float: left;
     border-radius: 20px;
-    width: 80%;
-    max-width: 500;  
+    width: 50%;
+    max-width: 600;  
     opacity: 0;
     aspect-ratio: 16/9;
     animation: fadeInAnimation 2s 0.5s forwards;
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 5px 5px 5px #39314b;
+    float: left;
     border-radius: 20px;
-    width: 80%;
-    max-width: 500;
+    width: 50%;
+    max-width: 600;
     opacity: 0;
+    animation: fadeInAnimation 2s 0.75s forwards;
 }
 
 .headshots {
@@ -104,18 +127,6 @@ img {
     width: 200px;
     border-radius: 100px;
     animation: fadeInAnimation 2s;
-}
-
-.pictures1 {
-    animation: fadeInAnimation 2s 1s forwards;
-}
-
-.pictures2 {
-    animation: fadeInAnimation 2s 1.5s forwards;
-}
-
-.pictures3 {
-    animation: fadeInAnimation 2s 2s forwards;
 }
 
 .companyLogo {
@@ -154,6 +165,7 @@ img {
     font-family: Arial, Helvetica, sans-serif;
     color: #dddddd;
 	text-decoration: none;
+    font-size: large;
     text-shadow: 2px 2px 2px #39314b;
     animation: fadeInAnimation 1.5s;
 }
@@ -163,4 +175,20 @@ img {
     .topSide {all: unset;}
     .footerCol {width: 200px;}
     .footerSide {all: unset;}
+}
+
+@media only screen and (max-width: 768px) {
+    img {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .trailer {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .text {
+        max-width: 100%;
+    }
 }
