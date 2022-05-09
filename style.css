@@ -169,6 +169,32 @@ img {
     animation: fadeInAnimation 1.5s;
 }
 
+.socialMedia {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    font-family: Lucky, sans-serif;
+    font-size: xx-large;
+}
+
+a.socialMediaPage:link, a.socialMediaPage:visited  {
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 4px 4px 4px #39314b;
+}
+a.socialMediaPage:hover {
+    color: #eea160;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #39314b;
+}
+a.socialMediaPage:active {
+    color: #8d5425;
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 768px) {
     .topCol {width: 240px;}
     .topSide {all: unset;}
