@@ -1,12 +1,13 @@
 @font-face { font-family: Lucky; src: url('luckiest-guy.regular.ttf'); }
+@font-face { font-family: Lilita; src: url('LilitaOne-Regular.ttf'); }
 
 .top {
-    background-color: #eea160;
-    box-shadow: 0px 10px 10px #39314b;
+    background-color: #e28d48;
+    box-shadow: 0px 10px 10px #382033;
 }
 
 body {
-    background-color: #564064;
+    background-color: #45293f;
     height: 100%;
     margin: 0%;
     display:flex; 
@@ -17,9 +18,9 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #eea160;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px #39314b;
+    background-color: #6b3e75;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #382033;
     width: 80%;
     opacity: 0;
     animation: fadeInAnimation 2s 0.5s forwards;
@@ -33,23 +34,31 @@ body {
     font-family: Helvetica, sans-serif, sans-serif;
     font-size: x-large;
     color: #ffffff;
-    text-shadow: 1.5px 1.5px 2px #795130;
+    text-shadow: 1px 1px 2px #4c2c53;
 }
 
-h2 {margin-top: 10px;}
+h2 {
+    margin-top: 10px;
+    font-family: Lilita, sans-serif;
+    font-weight: normal;
+}
 
-h3 {margin-top: 10px;}
+h3 {
+    font-weight: normal;
+    margin-top: 10px;
+    font-family: Lilita, sans-serif;
+}
 
 footer {
-    background-color: #eea160;
+    background-color: #e28d48;
     margin-top: auto;
-    box-shadow: 0px -10px 10px #39314b;
+    box-shadow: 0px -10px 10px #382033;
 }
 
 table, th, td {
     /*border: 1px solid black;*/
     text-align: center;
-    font-family: Lucky, sans-serif;
+    font-family: Lilita, sans-serif;
     font-size: large;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -61,12 +70,12 @@ a:link, a:visited {
     text-shadow: 2px 2px 2px #795130;
 }
 a:hover {
-    color: #8e478c;
+    color: #6b3e75;
 	text-decoration: none;
     text-shadow: 1px 1px 2px #795130;
 }
 a:active {
-    color: #39314b;
+    color: #46284d;
 	text-decoration: none;
 }
 
@@ -104,7 +113,7 @@ a:active {
 
 .trailer {
     float: left;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 50%;
     max-width: 600;  
     opacity: 0;
@@ -114,7 +123,7 @@ a:active {
 
 img {
     float: left;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 50%;
     max-width: 600;
     opacity: 0;
@@ -176,7 +185,7 @@ img {
     width: 90%;
     max-width: 600px;
     text-align: center;
-    font-family: Lucky, sans-serif;
+    font-family: Lilita, sans-serif;
     font-size: xx-large;
 }
 
@@ -186,7 +195,7 @@ a.socialMediaPage:link, a.socialMediaPage:visited  {
     text-shadow: 4px 4px 4px #39314b;
 }
 a.socialMediaPage:hover {
-    color: #eea160;
+    color: #e28d48;
     text-decoration: none;
     text-shadow: 2px 2px 4px #39314b;
 }
